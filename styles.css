@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+#loading { outline: none; border: none; background: transparent;
+    color: white;
+}
+body {
+    background-color: #0d0e14;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+    transform: translateX(-100%)
+}
+.home {
+    height: 100px;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0)
+}
+
+.phone {
+    margin-top: -50px;
+    margin-left: -300;
+    margin-right: auto;
+    text-align: center;
+    font-size: 20px;
+    visibility: collapse;
+    font-family: fantasy;
+    color: white;
+}
+.dobbydrop button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    margin-left:0px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dobbydrop button:focus + .dobbycontent {
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform;
+    display: block;
+    word-wrap: break-word;
+  }
+.dobbyspline {
+    height: 500px;
+    width: 800px;
+}
+.dobbybutton {
+    color: white;
+    background-color: #181818;
+    border-color: #181818;
+    border-radius: 20px;
+    cursor: pointer;   
+    font-size: 25px; 
+    height: 80px;
+    width: 150px;
+    border-style: solid;
+    transition: background-color 1s;
+
+
+}
+.active {
+    border-radius: 20px;
+}
+.reviliobutton {
+    color: white;
+    background-color: #181818;
+    border-color: #181818;
+    border-radius: 20px;
+    cursor: pointer;   
+    font-size: 25px; 
+    height: 80px;
+    width: 150px;
+    border-style: solid;
+    transition: background-color 1s;
+}
+.reviliobutton:hover {
+    opacity: 0.4;
+    background-color: #0077CC;
+}
+.reviliobutton:active {
+    opacity: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15)
+}
+
+
+.dobbybutton:hover {
+    opacity: 0.4;
+    background-color: #0077CC;
+}
+.dobbycontent {
+    display: none;
+    width: 675px;
+    text-align: center;
+    text-align: left;
+
+}
+
+.dobbybutton:active {
+    opacity: 1;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15)
+}
+.breathe {
+    height: 600;
+    width: 500;
+    z-index: -1;
+}
+
+.skills {
+    font-size: 125px;
+}
+.projects {
+    font-size: 125px;
+}
+
+.cert1 {
+    width: 300px;
+    margin-left: 0px;
+    transition: width 1.5s;
+}
+.code1 {
+    width: 100px;
+    margin-left: -1000px;
+    transition: width 1.5s;
+
+}
+.code1:hover {
+    width: 400px;
+}
+.cert1:hover {
+    width: 700px;
+
+}
+.revilio1 {
+    margin-bottom: 100px;
+    margin-top: 150px;
+
+
+}
+.skillspline {
+    height: 800px;
+    width: 1500px;
+    display: none;
+}
+.reviliocontent {
+    display: none;
+    width: 675px;
+    text-align: center;
+    text-align: left;
+}
+.harvardlink1 {
+    margin-right: 0px;
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+}
+.harvard1 {
+    margin-right: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+h3 {
+    margin: 5px
+}
+.skillphone {
+    width: 800px;
+    margin: 60px auto;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(71, 71, 71, 0.753);
+    display: none;    
+}
+.skillphone li {
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #0077CC;
+    display: block;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: black;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: #3d3d3d;
+}
+.python{
+    width: 70%;
+    animation: python 3s;
+}
+.HTML{
+    width: 60%;
+    animation: HTML 3s;
+}
+.CSS{
+    width: 50%;
+    animation: CSS 3s;
+}
+.Spline{
+    width: 60%;
+    animation: Spline 3s;
+}
+.Webflow{
+    width: 10%;
+    animation: Webflow 3s;
+}
+.Linux{
+    width: 75%;
+    animation: Linux 3s;
+}
+.Javascript{
+    width: 5%;
+    animation: JavaScript 3s;
+}
+.skillphone {
+    display: block;
+}
+.lillebillede {
+    width: 700px;
+    margin-right: 1100px;
+    position: absolute;
+    border-color: #0077CC;
+    border-radius: 10%;
+    z-index: -1; 
+    margin-bottom: 1000px;
+}
+
+.headerintro {
+    margin-bottom: 1200px;
+    width: 700px;
+}
+.headerintro2 {
+    margin-bottom: 1500px;
+    width: 700px;
+}
+.harvardlink1:hover {
+    color: #0077CC;
+}
+.footer {
+    background-color: #ff0055;
+    padding-right: 1725px;
+    margin-top: 30px;
+
+    
+}
+
+
+.sidebar {
+    margin-top: -22px;
+    padding: 0;
+    width: 200px;
+    background-color: #242424;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+
+  .sidebar a.active {
+    background-color: #727272;
+    color: white;
+  }
+  
+
+  .sidebar a:hover:not(.active) {
+    background-color: #0077CC;
+    color: white;
+  }
+  
+ 
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+.copy {
+    margin-left: 300px;
+    padding-bottom: -300px;
+    padding-right: 200px;
+}
+.contacthead {
+    font-size: 70px;
+}
+.face {
+    width: 100px;
+}
+.icon-facebook,
+.icon-linkedin,
+.icon-github {
+  font-size: 70px; 
+  color: #555; 
+  transition: color 0.3s ease; 
+}
+
+
+.icon-facebook:hover,
+.icon-linkedin:hover,
+.icon-github:hover {
+  color: #0077CC; 
+}
+.descriptionintro {
+    text-align: center;
+    text-align: left;
+    width: 800px;
+    position: absolute;
+    margin-top: -180px;
+}
+.home {
+    height: 100px;
+}
+.box {
+    background-color: #0077CC;
+    height: 100px;
+    width: 2000px;
+    position: absolute;
+    margin-top: -300px;
+}
+.youtube1 {
+    margin-right: 0px;
+}
+.youtube1content {
+    width: 300px;
+    margin-right: 0px;
+    font-size: 18px;
+    text-align: center;
+    text-align: left;
+    text-decoration: none;
+}
+.youtube2content {
+    width: 300px;
+    margin-right: 0px;
+    font-size: 18px;
+    text-align: center;
+    text-align: left;
+    text-decoration: none;
+}
+@media only screen and (max-width: 428px) {
+    .text {
+        visibility: collapse;
+    }
+    .phone {
+        visibility: visible;
+    }
+    .home h1 {
+        margin-top: 0px;
+        margin-left: -250px;
+        margin-right: auto;
+        text-align: center;
+        font-size: 50px;
+        font-family: fantasy;
+        color: white;
+    }
+    .dobbyspline {
+        height: 800px;
+        width: 400px;
+    }
+    .breathe {
+        height: 400px;
+        width: 400px;
+        margin-left: 10px
+    }
+    .projects {
+        font-size: 75px;
+    }
+    .skills {
+        font-size: 75px;
+    }
+    .skillspline {
+        height: 750px;
+        width: 1300px;
+    }
+    .dobbycontent {
+        width: 375px;
+    }
+    .cert1 {
+        width: 300px;
+        margin-left: -900px;
+        transition: width 1.5s;
+    }
+    .cert1:hover {
+        width: 400px;
+        
+    }
+    .code1 {
+        display: none;
+    }
+    .reviliocontent {
+        width: 375px;
+    }
+    .skillphone {
+        display: block;
+        width: 290px;
+        margin-right: 840px;
+    }
+    .skillspline {
+        display: none;
+    }
+    .lillebillede {
+        width: 500px;
+        margin-right: 200px;
+        position: absolute;
+        border-color: #3326ee;
+        border-radius: 10%;
+        z-index: -1; 
+        margin-bottom: 500px;
+    }
+    .headerintro {
+        margin-bottom: 1200px;
+        width: 400px;
+        text-align: left;
+    }
+    .boxpress {
+        display: none;
+    }
+    .harvard1 {
+        margin-left: 150px;
+    }
+    .skills {
+        margin-right: 850px;
+    }
+    .footer {
+        background-color: #ff0055;
+        padding-right: 235px;
+        margin-top: 30px;
+        
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    
+      .copy {
+        margin-left: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        font-size: 20px;
+    }
+    .copyright {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+      /* Sidebar links */
+    .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .descriptionintro {
+        text-align: center;
+        width: 375px;
+        text-align: left;
+        margin-top: 400px;
+    }
+    .box {
+        background-color: #0077CC;
+        height: 100px;
+        width: 400px;
+        position: absolute;
+        margin-top: -10px;
+    }
+    .youtube1 {
+        margin-right: 850px;
+        width: 380px;
+    }
+    .youtube2 {
+        margin-right: 859px;
+        width: 380px;
+        margin-top: 30px;
+    }
+    .youtube2content {
+        margin-right: 850px;
+        width: 380px;
+    }
+    .youtube1content {
+        margin-right: 850px;
+        width: 380px;
+    }
+    .harvardlink1 {
+        margin-right: 850px;
+        width: 380px;        
+    }
+
+}
